@@ -30,21 +30,21 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
-    <script src="../../gymove/assets/vendor/global/global.min.js"></script>
-	<script src="../../gymove/assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-	<script src="../../gymove/assets/vendor/chart.js/Chart.bundle.min.js"></script>
-    <script src="../../gymove/assets/js/custom.min.js"></script>
-	<script src="../../gymove/assets/js/deznav-init.js"></script>
-	<script src="../../gymove/assets/vendor/owl-carousel/owl.carousel.js"></script>
+    <script src="../../php-portfolio/assets/vendor/global/global.min.js"></script>
+	<script src="../../php-portfolio/assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="../../php-portfolio/assets/vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="../../php-portfolio/assets/js/custom.min.js"></script>
+	<script src="../../php-portfolio/assets/js/deznav-init.js"></script>
+	<script src="../../php-portfolio/assets/vendor/owl-carousel/owl.carousel.js"></script>
 	
 	<!-- Chart piety plugin files -->
-    <script src="../../gymove/assets/vendor/peity/jquery.peity.min.js"></script>
+    <script src="../../php-portfolio/assets/vendor/peity/jquery.peity.min.js"></script>
 	
 	<!-- Apex Chart -->
-	<script src="../../gymove/assets/vendor/apexchart/apexchart.js"></script>
+	<script src="../../php-portfolio/assets/vendor/apexchart/apexchart.js"></script>
 	
 	<!-- Dashboard 1 -->
-	<script src="../../gymove/assets/js/dashboard/dashboard-1.js"></script>
+	<script src="../../php-portfolio/assets/js/dashboard/dashboard-1.js"></script>
 	<script>
 		function carouselReview(){
 			/*  testimonial one function by = owl.carousel.js */

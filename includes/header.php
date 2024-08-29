@@ -48,11 +48,11 @@ $color = ['primary', 'info', 'danger', 'success', 'warning', 'dark'];
 <title><?= $web_show['web_title'] ?> | ADMIN</title>
 <!-- Favicon icon -->
 
-<link rel="icon" type="image/png" sizes="16x16" href="../../gymove/assets/uploads/icon/<?=$web_show['icon']?>">
-<link rel="stylesheet" href="../../gymove/assets/vendor/chartist/css/chartist.min.css">
-<link href="../../gymove/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-<link href="../../gymove/assets/vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
-<link href="../../gymove/assets/css/style.css" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../php-portfolio/assets/uploads/icon/<?=$web_show['icon']?>">
+<link rel="stylesheet" href="../../php-portfolio/assets/vendor/chartist/css/chartist.min.css">
+<link href="../../php-portfolio/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+<link href="../../php-portfolio/assets/vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="../../php-portfolio/assets/css/style.css" rel="stylesheet">
 <link
 href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
 rel="stylesheet">
@@ -83,9 +83,9 @@ Main wrapper start
 	Nav header start
 ***********************************-->
 <div class="nav-header">
-	<a href="../../gymove/admin.php" class="brand-logo">
-		<img class="logo-abbr" src="../../gymove/assets/uploads/logo/<?= $web_show['image_logo'] ?>" alt="">
-		<!-- <img class="brand-title" src="../../gymove/assets/images/logo-text.png" alt=""> -->
+	<a href="../../php-portfolio/admin.php" class="brand-logo">
+		<img class="logo-abbr" src="../../php-portfolio/assets/uploads/logo/<?= $web_show['image_logo'] ?>" alt="">
+		<!-- <img class="brand-title" src="../../php-portfolio/assets/images/logo-text.png" alt=""> -->
 		<h2 class="logo pl-2 pt-2"><b><?= $web_show['text_logo'] ?>.</b></h2>
 	</a>
 
@@ -151,7 +151,7 @@ Main wrapper start
 										<!-- Message Data show -->
 									<li class="<?= ($message['status'] == 0 ? 'bg-light':'') ?>">
 										<div class="timeline-badge <?= $color[$i]?>"></div>
-										<a class="timeline-panel text-muted" href="../../gymove/messages/view.php?id=<?= $message['id'] ?>">
+										<a class="timeline-panel text-muted" href="../../php-portfolio/messages/view.php?id=<?= $message['id'] ?>">
 											<strong class="text-primary"><?= $message['name'] ?></strong>
 											<p class="mb-0"><?= $message['message'] ?>.</p>
 											<span><?=time_before($message['datetime'])?></span>
@@ -162,7 +162,7 @@ Main wrapper start
 									
 								</ul>
 							</div>
-							<a class="all-notification" href="../../gymove/messages/see_messages.php">See all messages <i
+							<a class="all-notification" href="../../php-portfolio/messages/see_messages.php">See all messages <i
 									class="ti-arrow-right"></i></a>
 						</div>
 					</li>
@@ -193,7 +193,7 @@ Main wrapper start
 										<!--Review Data show -->
 									<li class="<?= ($review['status'] == 0 ? 'bg-light':'') ?>">
 										<div class="timeline-badge <?= $color[$i]?>"></div>
-										<a class="timeline-panel text-muted" href="../../gymove/reviews/view.php?id=<?= $review['id'] ?>">
+										<a class="timeline-panel text-muted" href="../../php-portfolio/reviews/view.php?id=<?= $review['id'] ?>">
 											<strong class="text-primary"><?= $review['name'] ?></strong>
 											<p class="mb-0"><?= $review['review'] ?>.</p>
 											<span><?= time_before($review['datetime']) ?></span>
@@ -219,7 +219,7 @@ Main wrapper start
 							</div>
 						</a>
 						<div class="dropdown-menu dropdown-menu-right">
-							<a href="../../gymove/profile/profile.php?page_name=Dashboard>Profile" class="dropdown-item ai-icon">
+							<a href="../../php-portfolio/profile/profile.php?page_name=Dashboard>Profile" class="dropdown-item ai-icon">
 								<svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary"
 									width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 									stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -228,7 +228,7 @@ Main wrapper start
 								</svg>
 								<span class="ml-2">Profile </span>
 							</a>
-							<a href="../../gymove/messages/see_messages.php" class="dropdown-item ai-icon">
+							<a href="../../php-portfolio/messages/see_messages.php" class="dropdown-item ai-icon">
 								<svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success"
 									width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 									stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -239,7 +239,7 @@ Main wrapper start
 								</svg>
 								<span class="ml-2">Inbox </span>
 							</a>
-							<a href="../../gymove/authentication/logout.php" class="dropdown-item ai-icon">
+							<a href="../../php-portfolio/authentication/logout.php" class="dropdown-item ai-icon">
 								<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger"
 									width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 									stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -271,9 +271,9 @@ Main wrapper start
 					<span class="nav-text">Dashboard</span>
 				</a>
 				<ul aria-expanded="false">
-					<li><a href="../../gymove/admin/admin.php?page_name=Dashboard>Admin">Admin</a></li>
-					<li <?= ($after_assoc['role'] == 0 ? '':'hidden') ?>><a href="../../gymove/authentication/register.php?page_name=Dashboard>Register Admin">Register Admin</a></li>
-					<li><a href="../../gymove/profile/profile.php?page_name=Dashboard>Profile">Profile</a></li>
+					<li><a href="../../php-portfolio/admin/admin.php?page_name=Dashboard>Admin">Admin</a></li>
+					<li <?= ($after_assoc['role'] == 0 ? '':'hidden') ?>><a href="../../php-portfolio/authentication/register.php?page_name=Dashboard>Register Admin">Register Admin</a></li>
+					<li><a href="../../php-portfolio/profile/profile.php?page_name=Dashboard>Profile">Profile</a></li>
 				</ul>
 			</li>
 			<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
@@ -281,8 +281,8 @@ Main wrapper start
 					<span class="nav-text">Skills</span>
 				</a>
 				<ul aria-expanded="false">
-					<li><a href="../../gymove/skills/skills.php?page_name=Skills>Add Skills">Add skills</a></li>
-					<li><a href="../../gymove/skills/see_skills.php?page_name=Skills>See Skills">See skills</a></li>
+					<li><a href="../../php-portfolio/skills/skills.php?page_name=Skills>Add Skills">Add skills</a></li>
+					<li><a href="../../php-portfolio/skills/see_skills.php?page_name=Skills>See Skills">See skills</a></li>
 				</ul>
 			</li>
 			<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
@@ -290,8 +290,8 @@ Main wrapper start
 					<span class="nav-text">Services</span>
 				</a>
 				<ul aria-expanded="false">
-					<li><a href="../../gymove/services/services.php?page_name=Service>Add service">Add Service</a></li>
-					<li><a href="../../gymove/services/see_services.php?page_name=Service>See service">See Services</a></li>
+					<li><a href="../../php-portfolio/services/services.php?page_name=Service>Add service">Add Service</a></li>
+					<li><a href="../../php-portfolio/services/see_services.php?page_name=Service>See service">See Services</a></li>
 				</ul>
 			</li>
 			<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
@@ -308,7 +308,7 @@ Main wrapper start
 					</span>
 				</a>
 				<ul aria-expanded="false">
-					<li><a href="../../gymove/reviews/see_reviews.php?page_name=Reviews>See reviews">See Reviews</a></li>
+					<li><a href="../../php-portfolio/reviews/see_reviews.php?page_name=Reviews>See reviews">See Reviews</a></li>
 				</ul>
 			</li>
 			<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
@@ -325,7 +325,7 @@ Main wrapper start
 					</span>
 				</a>
 				<ul aria-expanded="false">
-					<li><a href="../../gymove/messages/see_messages.php?page_name=Messages>See messages">See Messages</a></li>
+					<li><a href="../../php-portfolio/messages/see_messages.php?page_name=Messages>See messages">See Messages</a></li>
 				</ul>
 			</li>
 			<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
@@ -333,8 +333,8 @@ Main wrapper start
 					<span class="nav-text">Portfolio</span>
 				</a>
 				<ul aria-expanded="false">
-					<li><a href="../../gymove/portfolios/portfolios.php?page_name=Portfolio/Add Portfolio">Add Portfolio</a></li>
-					<li><a href="../../gymove/portfolios/see_portfolios.php?page_name=Portfolio>See Portfolios">See Portfolios</a></li>
+					<li><a href="../../php-portfolio/portfolios/portfolios.php?page_name=Portfolio/Add Portfolio">Add Portfolio</a></li>
+					<li><a href="../../php-portfolio/portfolios/see_portfolios.php?page_name=Portfolio>See Portfolios">See Portfolios</a></li>
 				</ul>
 			</li>
 			<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
@@ -352,7 +352,7 @@ Main wrapper start
 				</a>
 				<ul aria-expanded="true">
 					<li <?= ($after_assoc['role'] == 0 ? '':'hidden') ?>>>
-						<a href="../../gymove/web_info/activitys.php?page_name=Web Info>Activitys">Activitys 
+						<a href="../../php-portfolio/web_info/activitys.php?page_name=Web Info>Activitys">Activitys 
 							<small class="text-danger">
 								<?php foreach($activity_result as $check){
 									if($check['status'] == 0){
@@ -363,11 +363,11 @@ Main wrapper start
 							</small>
 						</a>
 					</li>
-					<li><a href="../../gymove/web_info/update_info.php?page_name=Web Info>Change Info">Change Info</a></li>
-					<li><a href="../../gymove/web_info/update_icon.php?page_name=Web Info>Change Icon">Change Icon</a></li>
-					<li><a href="../../gymove/web_info/update_logo_image.php?page_name=Web Info>Change Logo">Change Logo</a></li>
-					<li><a href="../../gymove/web_info/update_landing_image.php?page_name=Web Info>Change Image">Change Image</a></li>
-					<li><a href="../../gymove/web_info/settings.php?page_name=Web Info>Settings">Settings</a></li>
+					<li><a href="../../php-portfolio/web_info/update_info.php?page_name=Web Info>Change Info">Change Info</a></li>
+					<li><a href="../../php-portfolio/web_info/update_icon.php?page_name=Web Info>Change Icon">Change Icon</a></li>
+					<li><a href="../../php-portfolio/web_info/update_logo_image.php?page_name=Web Info>Change Logo">Change Logo</a></li>
+					<li><a href="../../php-portfolio/web_info/update_landing_image.php?page_name=Web Info>Change Image">Change Image</a></li>
+					<li><a href="../../php-portfolio/web_info/settings.php?page_name=Web Info>Settings">Settings</a></li>
 				</ul>
 			</li>
 		</ul>
