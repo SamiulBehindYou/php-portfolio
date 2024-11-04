@@ -31,7 +31,7 @@ if(isset($_POST['profile'])){
                             $photo_sql = "UPDATE users SET name = '$name', email = '$email', image = '$file_name' WHERE id = $id";
         
                             if($conn->query($photo_sql)){
-                                move_uploaded_file($image['tmp_name'], '../../gymove/assets/uploads/profile/'.$file_name);
+                                move_uploaded_file($image['tmp_name'], '../../php-portfolio/assets/uploads/profile/'.$file_name);
                                 $_SESSION['success_profile'] = 'Profile added successfully!';
                                 activitys($_SESSION['login_status'], 'Profile updated!');
                                 header('location:profile.php');
