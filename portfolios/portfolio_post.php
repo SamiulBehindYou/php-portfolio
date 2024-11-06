@@ -5,6 +5,7 @@ require '../includes/function.php';
 if(isset($_POST['portfoilo'])){
     $title = $_POST['title'];
     $sub_title = $_POST['sub_title'];
+    $link = $_POST['link'];
     $image = $_FILES['image'];
 
     if($title != null && $sub_title != null){
@@ -15,13 +16,11 @@ if(isset($_POST['portfoilo'])){
             if(in_array($extension, $extension_type)){
                 if($image['size'] <= 10000000){
 
-                    //unlink will apply here
-
                     $file_name = uniqid().'.'.$extension;
-                    $photo_sql = "INSERT INTO portfolios(title, sub_title, image) VALUES('$title', '$sub_title', '$file_name')";
+                    $photo_sql = "INSERT INTO portfolios(title, sub_title, link, image) VALUES('$title', '$sub_title', '$link', '$file_name')";
 
                     if($conn->query($photo_sql)){
-                        move_uploaded_file($image['tmp_name'], '../../gymove/assets/uploads/portfolios/'.$file_name);
+                        move_uploaded_file($image['tmp_name'], '../assets/uploads/portfolios/'.$file_name);
                         $_SESSION['success_portfolio'] = 'Portfolio added successfully!';
                         activitys($_SESSION['login_status'], 'Portfolio added!');
                         header('location:see_portfolios.php');

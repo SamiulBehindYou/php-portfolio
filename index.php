@@ -83,7 +83,7 @@ $web_show = mysqli_fetch_assoc($web_result);
   
 	  <div class="collapse navbar-collapse text-center" id="navbarsExample09">
 			<ul class="navbar-nav ml-auto">
-			   <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+			   <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
 			   <li class="nav-item"><a class="nav-link smoth-scroll" href="#skillbar">Expertise</a></li>
 			   <li class="nav-item"><a class="nav-link smoth-scroll" href="#service">Services</a></li>
 			   <li class="nav-item"><a class="nav-link smoth-scroll" href="#portfolio">Portfolio</a></li>
@@ -230,7 +230,7 @@ $web_show = mysqli_fetch_assoc($web_result);
 							<img src="assets/uploads/portfolios/<?= $portfolio['image'] ?>" class="img-fluid" height="500px">
 	
 							<div class="portoflio-item-overlay">
-								<a href="portfolio-single.html"><i class="ti-plus"></i></a>
+								<a target="_blank" href="<?= $portfolio['link'] ?>"><i class="ti-eye"></i></a>
 							</div>
 						</div>
 						<div class="text mt-3">

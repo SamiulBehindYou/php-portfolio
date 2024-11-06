@@ -8,7 +8,7 @@ $image = $_GET['image'];
 $delete = "DELETE FROM portfolios WHERE id = $id";
 
 if($conn->query($delete)){
-    unlink('../../gymove/assets/uploads/portfolios/'.$image);
+    unlink('../assets/uploads/portfolios/'.$image);
     $_SESSION['delete_success'] = 'Successfully deleted!';
     activitys($_SESSION['login_status'], 'Portfolio deleted!');
     header('location:see_portfolios.php');

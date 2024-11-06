@@ -48,7 +48,7 @@ $result = mysqli_query($conn, $select);
             <th scope="col"><?= $index+1 ?></th>
             <th><?= $show['title'] ?></th>
             <th><?= $show['sub_title'] ?></th>
-            <th><img src="../../gymove/assets/uploads/portfolios/<?= $show['image'] ?>" width="60px"></th>
+            <th><img src="../assets/uploads/portfolios/<?= $show['image'] ?>" width="60px"></th>
             <th><a href="status.php?id=<?= $show['id'] ?>" class="btn btn-<?= ($show['status'] == 1 ? 'success':'danger') ?> btn-sm"><?= ($show['status'] == 1 ? 'Active':'Deactivted') ?></a></th>
             <th>
                 <!-- <a href="portfolio_edit.php?id=<?= $show['id'] ?>" class="btn btn-info btn-xxs shadow m-1">Edit</a> -->

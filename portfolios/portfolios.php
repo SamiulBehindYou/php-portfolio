@@ -17,6 +17,10 @@
                     <input type="text" value="<?= (isset($_SESSION['sub_title']) ? $_SESSION['sub_title']:'') ?>" name="sub_title" class="form-control" placeholder="Enter your sub title!">
                 </div>
                 <div class="mb-3">
+                    <label class="form-label">Link</label>
+                    <input type="text" value="<?= (isset($_SESSION['link']) ? $_SESSION['link']:'') ?>" name="link" class="form-control" placeholder="Enter your portfolio link!">
+                </div>
+                <div class="mb-3">
                     <label class="form-label">Image</label>
                     <input type="file" name="image" class="form-control" onchange="document.getElementById('img').src = window.URL.createObjectURL(this.files[0])">
                     <img id="img" class="mt-3 rounded" width="200"/>
