@@ -403,7 +403,7 @@ $web_show = mysqli_fetch_assoc($web_result);
 			</div>
 			<div class="col-lg-10">
 				<div class="text-right">
-					<p class="lead"><span class="text-color">CreativeIT</span> © 2019 All Right Reserved by Samiul.</p>
+					<p class="lead"><span class="text-color">SAMULBD</span> © 2019 All Right Reserved by Samiul.</p>
 					<a href="#top" class="backtop smoth-scroll"><i class="ti-angle-up"></i></a>
 				</div>
 			</div>
