@@ -83,7 +83,7 @@ Main wrapper start
 	Nav header start
 ***********************************-->
 <div class="nav-header">
-	<a href="../admin.php" class="brand-logo">
+	<a href="../admin/admin.php" class="brand-logo">
 		<img class="logo-abbr" src="../assets/uploads/logo/<?= $web_show['image_logo'] ?>" alt="">
 		<!-- <img class="brand-title" src="../assets/images/logo-text.png" alt=""> -->
 		<h2 class="logo pl-2 pt-2"><b><?= $web_show['text_logo'] ?>.</b></h2>
