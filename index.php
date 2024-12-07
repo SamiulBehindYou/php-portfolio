@@ -399,11 +399,11 @@ $web_show = mysqli_fetch_assoc($web_result);
 	<div class="container">
 		<div class="row align-items-center text-center text-lg-left">
 			<div class="col-lg-2">
-				<h2 class="logo mb-4">Samiul.</h2>
+				<h2 class="logo mb-4">SAMIULBD.</h2>
 			</div>
 			<div class="col-lg-10">
 				<div class="text-right">
-					<p class="lead"><span class="text-color">SAMULBD</span> © 2019 All Right Reserved by Samiul.</p>
+					<p class="lead"><span class="text-color">SAMIULBD</span> © 2019 All Right Reserved by SAMIULBD.</p>
 					<a href="#top" class="backtop smoth-scroll"><i class="ti-angle-up"></i></a>
 				</div>
 			</div>
