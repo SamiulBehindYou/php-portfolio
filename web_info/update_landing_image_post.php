@@ -24,7 +24,7 @@ if(isset($_POST['landingimage'])){
                 $photo_sql = "UPDATE web_info SET image = '$file_name' WHERE id = 1";
 
                 if($conn->query($photo_sql)){
-                    move_uploaded_file($image['tmp_name'], '../../gymove/assets/uploads/landing_image/'.$file_name);
+                    move_uploaded_file($image['tmp_name'], '../assets/uploads/landing_image/'.$file_name);
                     $_SESSION['success_landing_image'] = 'Image Updated successfully!';
                     activitys($_SESSION['login_status'], 'Landing image Updated!');
                     header('location:update_landing_image.php');
